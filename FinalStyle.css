@@ -1,6 +1,7 @@
 ﻿body {
     margin: 0;
     font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .Navbar {
@@ -9,7 +10,7 @@
 }
 
 header {
-    background: #55d6aa;
+    background: linear-gradient(#55d6aa, darkgreen);
 }
 
     header::after {
@@ -35,9 +36,9 @@ nav {
 
     nav li {
         display: inline-block;
-        margin-left: 240px;
+        margin-left: 100px;
         padding-top: 45px;
-        font-size: 60px;
+        font-size: 40px;
         position: relative;
     }
 
@@ -64,3 +65,17 @@ nav {
         nav a:hover::before {
             width: 100%;
         }
+    h1 {
+        text-align: center;
+        font-size: 100px;
+    }
+    h2 {
+    text-align: left;
+    font-size: 70px;
+    margin-left: 5%;
+    }
+    ol li {
+        text-align: left;
+        font-size: 25px;
+        margin-left: 8%;
+    }

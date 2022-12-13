@@ -1,26 +1,45 @@
+<!--Doctype tells the page that this is an html document-->
 <!DOCTYPE html>
-<html lang="en">
+<!--HTML tag contains all code-->
+<html lang="en" style="font-family:fantasy">
+<!--Head tag contains meta data-->
 <head>
+    <!--Meta tags contain page specifications-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title of this page is the homepage-->
     <title> Homepage </title>
-    <link rel="stylesheet" type="text/css" href="FinalStyle.css">
-
+    <!--Links the CSS page that contains data on how HTML elements display-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Script tag links to an external javascript page-->
+    <script src="Script1.js"></script>
 </head>
+<!--Body tag contains all HTML elements-->
 <body>
+    <!--The header contains all elements relating to the navbar-->
     <header>
+        <!--div element assigns a name to the navbar elements-->
         <div class="Navbar">
+            <!--UAT logo image that will be on the left side of the navbar-->
             <img src="UATLOGO.png" alt="LOGO" class="Logo">
+            <!--nav contains the navbar elements-->
             <nav>
+                <!--uses an unordered list to display each link-->
                 <ul>
+                    <!--list item tag contains the title and link to the buttons-->
                     <li> <a href="index.html"> HOME </a> </li>
-                    <li> <a href="index2.html"> ARTEMIS PROGRAM </a> </li>
+                    <li> <a href="LoadData.html"> ARTEMIS PROJECT </a> </li>
                     <li> <a href="index3.html"> UAT BOARDS </a> </li>
                 </ul>
             </nav>
         </div>
     </header>
+    <!--Title of the page to be displayed-->
     <h1> Home </h1>
+    <img src="me.png" alt="me" style="border-radius:5%; border:5px solid black; float:left; margin-left:4%">
+    <h2 style="padding-left: 35%; font-size: 50px;"> Dakota Thatcher </h2>
+    <br>
+    <p style="padding-left: 35%; font-size: 35px;"> UAT Game Programming major and self-taught artist </p>
 </body>
 </html>
