@@ -24,40 +24,37 @@
             <p class = "right navtext">Technical Artist</p>
         </header>
 
-            <main>
+        <main>
             <section>
                 <h2>Landscape Grass System</h2>
-                <div class = "absoluteFlexbox">
-                    <img src = "assets/Images/Logos/LogoUnreal.png" alt = "unreal engine logo" class = "icon">
-                    <img src = "assets/Images/Logos/LogoBlender.png" alt = "blender logo" class = "icon">
-                </div>
+                <div class = "sector-grid">
+                    <div id = "description">
 
-                <div class = "flexbox full">
-                    <div>
-                        <p>Landscape material that uses vertex color to blend between layers so environment artists can paint paths. Grass and small foliage is automatically instanced on the grass layer. All textures are projected top-down. </p>
-                        <p>Layers are height blended</p>
-                        <p>Path height is also used for color selection</p>
-                        <p>Grass mesh has vertical split normals to inherit ground shading</p>
-                        <p>Grass material increases hue & saturation as it rises from the ground</p>
                     </div>
-                    <img src = "assets/Images/Showcases/UE5_grass/UE5GrassShowcase.png" alt = "Stylized grass render" class = "imgBig">
+                    <div id = "viewer" class = "viewer">
+                        <div class = "view-top-flex">
+                            <img src="assets/Images/Logos/LogoUnreal.png" alt="Unreal Engine Logo" class = "small-icon">
+                            <img src="assets/Images/Logos/LogoKrita.png" alt="Krita Logo" class = "small-icon">
+                            <img src="assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
+                        </div>
+                        <img src = "assets/Images/Showcases/UE5_grass/UE5GrassShowcase.png" alt = "stylized grass render" class = "full viewer-img">
+                        <div class = "view-bottom-flex">
+                            <div class = "asset-icon">
+                                <img src="assets/Images/Showcases/UE5_grass/GrasssSplat.png" alt="Grass albedo texture" class = "full">
+                                <p>Grass Color</p>
+                            </div>
+                            <div class = "asset-icon">
+                                <img src="assets/Images/Showcases/UE5_grass/RockPathHeight.png" alt="Path height map texture" class = "full">
+                                <p>Path Height</p>
+                            </div>
+                            <div class = "asset-icon">
+                                <img src="assets/Images/Showcases/UE5_grass/RockNormal.png" alt="Path normal map texture" class = "full">
+                                <p>Path Normal</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <section class = "flexbox right">
-                    <div class = "third">
-                        <img src = "assets/Images/Showcases/UE5_grass/GrasssSplat.png" alt = "Grass Albedo" class = "icon half">
-                        <p class = "center">Grass Color</p>
-                    </div>
-                    <div class = "third">
-                        <img src = "assets/Images/Showcases/UE5_grass/RockPathHeight.png" alt = "Path Height" class = "icon half">
-                    <p class = "center">Path Height</p>
-                    </div>
-                    <div class = "third">
-                        <img src = "assets/Images/Showcases/UE5_grass/RockNormal.png" alt = "Path Normal" class = "icon half">
-                        <p class = "center">Path Normal</p>
-                    </div>
-                </section>
             </section>
-
         </main>
     </body>
 

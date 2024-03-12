@@ -350,3 +350,85 @@ input[type="text"], textarea {
     background-color: var(--Primary);
     margin-bottom: 0.5rem;
   }
+
+
+  /* SECTION STYLING */
+main {
+    padding-top: 8rem;
+}
+
+section h2 {
+    margin-left: 10%;
+    font-family: fantasy;
+    font-weight: 100;
+    font-size: 2em;
+    margin-bottom: 1.5rem;
+}
+
+.sector-grid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas: 
+        "text img img"
+        "vid img img"
+    ;
+
+    gap: 2rem;
+}
+
+.viewer-img {
+    border: 3px var(--Offwhite) solid;
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.view-bottom-flex {
+    display: flex;
+    position: absolute;
+    gap: 2%;
+    width: 46%;
+    transform: translateY(-30%) translateX(1rem);
+}
+
+.view-top-flex {
+    display: flex;
+    position: absolute;
+    gap: 2%;
+    width: 46%;
+    transform: translateY(-70%) translateX(3rem);
+}
+
+.asset-icon {
+    width: 22%;
+    align-self: center;
+}
+
+.asset-icon img {
+    border: 3px var(--Offwhite) solid;
+}
+
+.asset-icon p {
+    font-family: fantasy;
+    font-weight: 10;
+    color: var(--Offwhite);
+
+    font-size: 1em;
+    text-align: center;
+}
+
+.small-icon {
+    width: 15%;
+    align-self: center;
+}
+
+#description { grid-area: text;}
+#vid { grid-area: vid;}
+#viewer { grid-area: img;}
