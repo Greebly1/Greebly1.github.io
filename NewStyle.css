@@ -370,7 +370,7 @@ section h2 {
     padding-right: 2rem;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: min-content min-content;
 
     grid-template-areas: 
         "text img img"
