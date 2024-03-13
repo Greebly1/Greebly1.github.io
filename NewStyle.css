@@ -432,3 +432,24 @@ section h2 {
 #description { grid-area: text;}
 #vid { grid-area: vid;}
 #viewer { grid-area: img;}
+
+.description {
+    padding-left: 4rem;
+    padding-top: 4rem;
+    padding-right: 4rem;
+    text-align: justify;
+}
+
+.description p {
+    font-family: fantasy;
+    font-weight: 1;
+    font-size: 1.2em;
+    color: var(--Secondary);
+
+    margin-bottom: 1rem;
+}
+
+strong {
+    color: var(--Tertiary);
+    font-weight: 1;
+}
