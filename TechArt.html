@@ -28,42 +28,42 @@
             <section>
                 <h2>Landscape Grass System</h2>
                 <div class = "sector-grid">
-                    <div id = "description">
-
-                    </div>
                     <div id = "viewer" class = "viewer">
-                        <div class = "view-top-flex">
-                            <img src="assets/Images/Logos/LogoUnreal.png" alt="Unreal Engine Logo" class = "small-icon">
-                            <img src="assets/Images/Logos/LogoKrita.png" alt="Krita Logo" class = "small-icon">
-                            <img src="assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
+                        <div>
+                            <div class = "view-top-flex">
+                                <img src="assets/Images/Logos/LogoUnreal.png" alt="Unreal Engine Logo" class = "small-icon">
+                                <img src="assets/Images/Logos/LogoKrita.png" alt="Krita Logo" class = "small-icon">
+                                <img src="assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
+                            </div>
+                            <img src = "assets/Images/Showcases/UE5_grass/watcharockgrow.png" alt = "stylized grass render" class = "full viewer-img">
+                            <div class = "view-bottom-flex">
+                                <div class = "asset-icon">
+                                    <img src="assets/Images/Showcases/UE5_grass/GrasssSplat.png" alt="Grass albedo texture" class = "full">
+                                    <p>Grass Color</p>
+                                </div>
+                                <div class = "asset-icon">
+                                    <img src="assets/Images/Showcases/UE5_grass/RockPathHeight.png" alt="Path height map texture" class = "full">
+                                    <p>Path Height</p>
+                                </div>
+                                <div class = "asset-icon">
+                                    <img src="assets/Images/Showcases/UE5_grass/RockNormal.png" alt="Path normal map texture" class = "full">
+                                    <p>Path Normal</p>
+                                </div>
+                            </div>
                         </div>
-                        <img src = "assets/Images/Showcases/UE5_grass/UE5GrassShowcase.png" alt = "stylized grass render" class = "full viewer-img">
-                        <div class = "view-bottom-flex">
-                            <div class = "asset-icon">
-                                <img src="assets/Images/Showcases/UE5_grass/GrasssSplat.png" alt="Grass albedo texture" class = "full">
-                                <p>Grass Color</p>
-                            </div>
-                            <div class = "asset-icon">
-                                <img src="assets/Images/Showcases/UE5_grass/RockPathHeight.png" alt="Path height map texture" class = "full">
-                                <p>Path Height</p>
-                            </div>
-                            <div class = "asset-icon">
-                                <img src="assets/Images/Showcases/UE5_grass/RockNormal.png" alt="Path normal map texture" class = "full">
-                                <p>Path Normal</p>
-                            </div>
-                        </div>
+                       
                     </div>
                     <div id = "description" class = "description">
                         <p>Built inside of Unreal Engine 5 <sub>(all assets made by me)</sub></p>
                         <p>All 3 textures are sampled with <strong>top-down projection</strong></p>
-                        <p>Landscape uses UEs to <strong>height blend</strong> the path textures over the grass. Additionally the blending takes into account physics materials for linkage with other systems.</p>
+                        <p>Landscape uses UEs landscape material layers to <strong>height blend</strong> the path textures over the grass. Additionally the blending takes into account physics materials for linkage with other systems.</p>
                         <p>Grass and foliage is automatically instanced</p>
                         <p>The material that the foliage uses gradually adjusts hue and saturation according to a vertical gradient. All foliage also uses <strong>vertical split normals</strong> to mimic the same shading as the ground.
                             <br/>
                             <br/>
                             The result is that the foliage blends into the ground below it. Your eyes cannot follow a single blade of grass to its root. Very fluffy and stylized.
                             <br/>
-                            Level designers and environment artists can easily <strong>paint where the path should go</strong>
+                            Level designers and environment artists can easily <strong>paint where the path should go.</strong> The system was packaged into a zip folder and given to some collegues. On the right is a game jam game <strong><u><a href = "https://lucasfoxworthy.framer.website/">Lucas Foxworthy</a></u></strong> made with my package.
                         </p>
                     </div>
                     <div id = "vid" class = "videoWrapper">
@@ -74,15 +74,48 @@
             <section>
                 <h2>Ice Shader</h2>
                 <div class = "sector-grid">
-                    <div id = "description">
-
+                    <div id = "viewer" class = "viewer">
+                        <div>
+                            <div class = "view-top-flex">
+                                <img src="assets/Images/Logos/LogoUnreal.png" alt="Unreal Engine Logo" class = "small-icon">
+                            </div>
+                            <div class = "colageGrid">
+                                <img src = "assets/Images/Showcases/IceShader/IceShader.gif" alt = "Sphere of ice shader" class = "twothird viewer-img">
+                            </div>
+                            <div class = "view-bottom-flex">
+                                <div class = "asset-icon">
+                                    <img src="assets/Images/Showcases/IceShader/IceNormal.jpg" alt="Ice normal texture" class = "full">
+                                    <p>Ice Normal</p>
+                                </div>
+                                <div class = "asset-icon">
+                                    <img src="assets/Images/Showcases/IceShader/perlin_noise.png" alt="baked perlin noise" class = "full">
+                                    <p>Perlin Noise</p>
+                                </div>
+                            </div>
+                        </div>
+                       
                     </div>
-                    <div id = "viewer" class = "viewer"> 
-
+                    <div id = "description" class = "description">
+                        <p>What started as an environment for a passion project pivoted towards refining an interesting shader setup.
+                        </p>
+                        <p>
+                            This ice shader mainly uses <strong>parallax mapping</strong> with a noise texture <sub>The noise is used for colorization</sub>
+                        </p>
+                        <p>What enables the true ice effect is that the <strong>parallax mapping uses non uniform depth</strong>, the depth is scaled by the noise texture.</p>
+                        <p>As a final layer of ice-ness, an icy <strong>normal map</strong> is used alongside some <strong>direct specular</strong></p>
                     </div>
-                </div>
+                    <div id = "vid" class = "videoWrapper">
+                    </div>
             </section>
         </main>
+
+        <footer>
+            <div class = "centered" style = "margin-bottom: 8rem; padding-top: 5rem;">
+                <h2><a href = "Contact.html">CONTACT ME</a></h2>
+                <hr style="margin: auto; width: 20rem;">
+            </div>
+
+        </footer>
     </body>
 
 </html>
