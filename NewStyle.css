@@ -420,7 +420,6 @@ column-gap: 10%;
   }
 
   .title {
-      margin-top: 10rem;
       text-align: center;
   }
 
@@ -628,3 +627,11 @@ strong {
     gap: 2px;
 }
 
+.title p {
+    font-size: 1.5em;
+    color: var(--Secondary);
+    font-weight: 1;
+    font-family: fantasy;
+    margin-top: 10px;
+    text-decoration: underline;
+}
