@@ -39,7 +39,7 @@ header p {
     margin-right: 3rem;
 
     display: inline;
-    font-family: fantasy;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 section {
@@ -131,7 +131,7 @@ p {
 }
 
 h2 {
-    font-family: fantasy;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: normal;
     font-size: 1.7em;
     font-weight: lighter;
