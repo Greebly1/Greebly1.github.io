@@ -26,48 +26,42 @@
 
         <main>
             <section>
-                <h2>Landscape Grass System</h2>
+                <h2>Snakelike Dungeon Generator</h2>
                 <div class = "sector-grid">
                     <div id = "viewer" class = "viewer">
                         <div>
                             <div class = "view-top-flex">
-                                <img src="assets/Images/Logos/LogoUnreal.png" alt="Unreal Engine Logo" class = "small-icon">
-                                <img src="assets/Images/Logos/LogoKrita.png" alt="Krita Logo" class = "small-icon">
-                                <img src="assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
+                                <img src="assets/Images/Logos/LogoUnity.png" alt="Unity Engine Logo" class = "small-icon">
                             </div>
-                            <img src = "assets/Images/Showcases/UE5_grass/watcharockgrow.png" alt = "stylized grass render" class = "full viewer-img">
-                            <div class = "view-bottom-flex">
-                                <div class = "asset-icon">
-                                    <img src="assets/Images/Showcases/UE5_grass/GrasssSplat.png" alt="Grass albedo texture" class = "full">
-                                    <p>Grass Color</p>
-                                </div>
-                                <div class = "asset-icon">
-                                    <img src="assets/Images/Showcases/UE5_grass/RockPathHeight.png" alt="Path height map texture" class = "full">
-                                    <p>Path Height</p>
-                                </div>
-                                <div class = "asset-icon">
-                                    <img src="assets/Images/Showcases/UE5_grass/RockNormal.png" alt="Path normal map texture" class = "full">
-                                    <p>Path Normal</p>
-                                </div>
+                            <div class = "grid2 full">
+                                <img src = "assets/Images/Showcases/GameProg/Snake_OG-logo.jpg" alt = "snake diagram" class = "full">
+                                <img src = "assets/Images/Showcases/GameProg/MazeGenComponent.png" alt = "dungeon generator component" class = "full">
+                                <img src = "assets/Images/Showcases/GameProg/MazeGen1.png" alt = "random dungeon 1" class = "full">
+                                <img src = "assets/Images/Showcases/GameProg/MazeGen2.png" alt = "random dungeon 2" class = "full">
+                                <img src = "assets/Images/Showcases/GameProg/MazGen3.png" alt = "random dungeon 3" class = "full">
+                                <img src = "assets/Images/Showcases/GameProg/MazeGen4.png" alt = "random dungeon 4" class = "full">
+
                             </div>
+
                         </div>
                        
                     </div>
                     <div id = "description" class = "description">
-                        <p>Built inside of Unreal Engine 5 <sub>(all assets made by me)</sub></p>
-                        <p>All 3 textures are sampled with <strong>top-down projection</strong></p>
-                        <p>Landscape uses UEs landscape material layers to <strong>height blend</strong> the path textures over the grass. Additionally the blending takes into account physics materials for linkage with other systems.</p>
-                        <p>Grass and foliage is automatically instanced</p>
-                        <p>The material that the foliage uses gradually adjusts hue and saturation according to a vertical gradient. All foliage also uses <strong>vertical split normals</strong> to mimic the same shading as the ground.
-                            <br/>
-                            <br/>
-                            The result is that the foliage blends into the ground below it. Your eyes cannot follow a single blade of grass to its root. Very fluffy and stylized.
-                            <br/>
-                            Level designers and environment artists can easily <strong>paint where the path should go.</strong> The system was packaged into a zip folder and given to some collegues. On the right is a game jam game <strong><u><a href = "https://lucasfoxworthy.framer.website/">Lucas Foxworthy</a></u></strong> made with my package.
-                        </p>
-                    </div>
-                    <div id = "vid" class = "videoWrapper">
-                        <iframe width="100%" height = "100%" src="https://www.youtube.com/embed/lbRlqYilRkk?si=vRxH8JbvGtHTW_SR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <p>Built inside of Unity Engine for rougelike tank game concept</p>
+                        <p><strong>Essentially, play a random game of snake, then after the snake reaches a certain size, turn it's body into rooms for a rougelike dungeon.</strong></p>
+                        <p><u>Algorithm</u></p>
+                        <sub>
+                            <p>   1. Start at 0,0 </p>
+                            <p>   2. Place room</p>
+                            <p>   3. Generate a random direction</p>
+                            <p>   4. Open the door in that direction</p>
+                            <p>   5. Move in that direction</p>
+                            <p>   6. Place a room</p>
+                            <p>   7. Open the door from the direction you just moved</p>
+                            <p>   8. Repeat</p>
+                        </sub>
+                        
+                        <p>The only complicated part of this project was the 2D list, I wanted a grid that would expand as the snake moved beyond its indices</p>
                     </div>
                 </div>
             </section>

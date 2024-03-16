@@ -648,3 +648,10 @@ strong {
     margin-top: 10px;
     text-decoration: underline;
 }
+
+.grid2 {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    
+}
