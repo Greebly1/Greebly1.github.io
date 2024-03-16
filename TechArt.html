@@ -105,7 +105,66 @@
                         <p>What enables the true ice effect is that the <strong>parallax mapping uses non uniform depth</strong>, the depth is scaled by the noise texture.</p>
                         <p>As a final layer of ice-ness, an icy <strong>normal map</strong> is used alongside some <strong>direct specular</strong></p>
                     </div>
-                    <div id = "vid" class = "videoWrapper">
+            </section>
+
+            <div style = "height: 80px;"></div>
+
+            <section>
+                <h2>Lava Shader</h2>
+                <div class = "sector-grid">
+                    <div id = "viewer" class = "viewer">
+                        <div>
+                            <div class = "view-top-flex">
+                                <img src="assets/Images/Logos/LogoGodot.png" alt="Godot Logo" class = "small-icon">
+                                <img src="assets/Images/Logos/LogoKrita.png" alt="Krita Logo" class = "small-icon">
+                                <img src="assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
+                            </div>
+                            <div class = "colageGrid">
+                                <img src = "assets/Images/Showcases/LavaShader/LavaShaderSFS.gif" alt = "Lava shader" class = "twothird viewer-img">
+                            </div>
+                            <div class = "view-bottom-flex">
+                                <div class = "asset-icon">
+                                    <img src="assets/Images/Showcases/LavaShader/LavaDistortion.png" alt="Lava heat distortion map" class = "full">
+                                    <p>Head distortion noise</p>
+                                    <p>(seamless)</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div id = "description" class = "description">
+                        <p>Made for Mini Jam #153: <strong><a href = "https://cranberryninja.itch.io/magnafisher" target="_blank"><u>Magnafisher</u></a></strong>. A game about magnet fishing in lava.
+                        </p>
+                        <p>Shader built in <strong>Godot using its GLSL</strong> for a sprite 2D shader. </p>
+                        <p>Uses an implementation of <strong>world space pixel position</strong> to <strong>project a heat distortion texture</strong> as well as calculate <strong>voronoi noise</strong></p>
+                        <p>2 Layers of voronoi are mixed using the luminance function and then passed to sample a <strong>gradient lookup texture</strong> for coloration</p>
+                        <p>All textures scroll in different directions and speeds</p>
+                        <p>2 scrolling sinwaves are mixed together to be used as a surface mask</p>
+                        <p>Lastly, the opacity pulsates according to a sinwave</p>
+                    </div>
+            </section>
+
+            <div style = "height: 20px;"></div>
+
+            <section>
+                <h2>Character Creator [WIP]</h2>
+                <div class = "sector-grid">
+                    <div id = "viewer" class = "viewer">
+                        <div>
+                            <div class = "view-top-flex">
+                                <img src="assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
+                            </div>
+                            <div class = "colageGrid">
+                                <img src = "assets/Images/Showcases/CharCreator/CharCreator.gif" alt = "Gif of base character mesh shifting genders" class = "twothird viewer-img">
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div id = "description" class = "description">
+                        <p>Made for an as of yet unrealized passion project</p>
+                        <p>The mesh uses <strong>shapekeys</strong> alongside <strong>bone offsets</strong> for customization</p>
+                        <p>The gender shapekey is created by <strong>retopologizing</strong> two seperate sculpts using the same mesh</p>
+                        <p>This results in a very powerful slider</p>
                     </div>
             </section>
         </main>
