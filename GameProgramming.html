@@ -51,14 +51,13 @@
                         <p><strong>Essentially, play a random game of snake, then after the snake reaches a certain size, turn it's body into rooms for a rougelike dungeon.</strong></p>
                         <p><u>Algorithm</u></p>
                         <sub>
-                            <p>   1. Start at 0,0 </p>
-                            <p>   2. Place room</p>
-                            <p>   3. Generate a random direction</p>
-                            <p>   4. Open the door in that direction</p>
-                            <p>   5. Move in that direction</p>
-                            <p>   6. Place a room</p>
-                            <p>   7. Open the door from the direction you just moved</p>
-                            <p>   8. Repeat</p>
+                            <p>Start at (0,0), and place a room</p>
+                            <p>   1. Generate a random direction</p>
+                            <p>   2. Open the door in that direction</p>
+                            <p>   3. Move in that direction</p>
+                            <p>   4. Place a room</p>
+                            <p>   5. Open the door from the direction you just moved</p>
+                            <p>   6. Repeat</p>
                         </sub>
                         
                         <p>The only complicated part of this project was the 2D list, I wanted a grid that would expand as the snake moved beyond its indices</p>
@@ -119,6 +118,33 @@
                 </div>
             </section>
             
+            <section>
+                <h2>Warehouse</h2>
+                <div class = "sector-grid">
+                    <div id = "viewer" class = "viewer">
+                        <div>
+                            <div class = "view-top-flex">
+                                <img src="assets/Images/Logos/LogoUnity.png" alt="Unity Engine Logo" class = "small-icon">
+                                <img src="assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
+                                <img src="assets/Images/Logos/LogoKrita.png" alt="Krita Logo" class = "small-icon">
+                            </div>
+                            <img src = "assets/Images/Showcases/Warehouse/Warehouse 1.png" alt = "A spooky warehouse" class = "full viewer-img">
+                        </div>
+                       
+                    </div>
+                    <div id = "description" class = "description">
+                        <p>This is a warehouse horror game <strong>made in a week with unity</strong></p>
+                        <p>All assets <sub>(except audio)</sub> was made by me</p>
+                        <p>The game absolutely abuses hard-coded <strong>event systems</strong> which made it so much easier to make the game in such a short time</p>
+                        <p>The entire level additionally exists on a <strong>5x5 grid of tiles</strong> stored as a <strong>singleton</strong> in memory</p>
+                        <p>Tiles individually contain motion activated lights</p>
+                    </div>
+                    <div id = "vid" class = "videoWrapper">
+                        <iframe width="100%" src="https://www.youtube.com/embed/gvA1gtSGJgs?si=YFfuIkj3gUfweC07" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
             <section>
                 <h2>Normal Snake Game</h2>
                 <div class = "sector-grid">
