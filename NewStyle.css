@@ -93,7 +93,7 @@
 
 @media screen and (min-width: 1100px) {
     :root {
-        --fontsize: 1.4em;
+        --fontsize: 1.5em;
     }
 
     .sector-grid {
