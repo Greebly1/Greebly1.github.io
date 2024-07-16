@@ -474,6 +474,7 @@ input[type="text"], textarea {
       border-left: var(--Tertiary) 1rem solid;
 
       padding-left: 1rem;
+      text-align: left;
 
       font-family: "Odor Mean Chey";
       font-weight: 100;
