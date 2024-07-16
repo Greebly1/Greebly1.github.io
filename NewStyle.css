@@ -74,7 +74,7 @@
     .main-grid {
 
     
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr ;
         
         margin-top: 2rem;
         margin-left: 5%;
@@ -426,7 +426,11 @@ input[type="text"], textarea {
   /*Main page styling*/
   .main-grid {
 
-column-gap: 10%;
+
+    
+    
+    
+    column-gap: 10%;
 
     row-gap: 0;
 
@@ -464,10 +468,10 @@ column-gap: 10%;
   }
 
   .profile h2 {
-      color: red;
-      border-top: red 3px solid;
-      border-bottom: red 3px solid;
-      border-left: red 1rem solid;
+      color: var(--Tertiary);
+      border-top: var(--Tertiary) 3px solid;
+      border-bottom: rvar(--Tertiary) 3px solid;
+      border-left: var(--Tertiary) 1rem solid;
 
       padding-left: 1rem;
 
@@ -483,9 +487,9 @@ column-gap: 10%;
   }
 
   .profbackground {
-      background-color: red;
+      background-color: var(--Tertiary);
       color: var(--Primary);
-      height: 20rem;
+      height: 24rem;
       padding: 1rem;
       font-family: "Odor Mean Chey";
       font-weight: 100;
@@ -503,6 +507,7 @@ column-gap: 10%;
 
   .profile .flexbox {
       gap: 0.5rem;
+      display:block;
   }
 
   .profile hr {
