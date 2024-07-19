@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <title>Dakota Thatcher</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+                
+        <link rel = "Stylesheet" href = "../NewStyle.css">
+    </head>
+
+    <body>
+
+        <header class = "top-bar in-front">
+            <div>
+                <a href="../Contact.html">
+                    <p class = "navtext leftbar">CONTACT</p>
+                </a>
+            </div>
+            <div></div>
+            <div class = "centered navtext">
+                <a  href="../Index.html">
+                    <p >Dakota Thatcher</p>
+                </a>
+            </div>
+            <div class = "right">
+                <a  href="https://linktr.ee/greebly_" target = "_blank">
+                    <p class = "navtext">Linktree</p>
+                <img src="../assets/Images/Logos/linktreeIcon.webp"  alt="Linktree Logo" >
+                </a>
+            </div>
+        </header>
+
+        <main>
+
+            <section>
+                <h2>Lava Shader</h2>
+                <div class = "sector-grid">
+                    <div id = "viewer" class = "viewer">
+                        <div>
+                            <div class = "view-top-flex">
+                                <img src="../assets/Images/Logos/LogoGodot.png" alt="Godot Logo" class = "small-icon">
+                                <img src="../assets/Images/Logos/LogoKrita.png" alt="Krita Logo" class = "small-icon">
+                                <img src="../assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
+                            </div>
+                            <div class = "colageGrid">
+                                <img src = "../assets/Images/Showcases/LavaShader/LavaShader.png" alt = "Lava shader" class = "twothird viewer-img">
+                            </div>
+                            <div class = "view-bottom-flex">
+                                <div class = "asset-icon">
+                                    <img src="../assets/Images/Showcases/LavaShader/LavaDistortion.png" alt="Lava heat distortion map" class = "full">
+                                    <p>Head distortion noise</p>
+                                    <p>(seamless)</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div id = "description" class = "description">
+                        <p>Made for Mini Jam #153: <strong><a href = "https://cranberryninja.itch.io/magnafisher" target="_blank"><u>Magnafisher</u></a></strong>. A game about magnet fishing in lava.
+                        </p>
+                        <p>Shader built in <strong>Godot using its GLSL</strong> for a sprite 2D shader. </p>
+                        <p>Uses an implementation of <strong>world space pixel position</strong> to <strong>project a heat distortion texture</strong> as well as calculate <strong>voronoi noise</strong></p>
+                        <p>2 Layers of voronoi are mixed using the luminance function and then passed to sample a <strong>gradient lookup texture</strong> for coloration</p>
+                        <p>All textures scroll in different directions and speeds</p>
+                        <p>2 scrolling sinwaves are mixed together to be used as a surface mask</p>
+                        <p>Lastly, the opacity pulsates according to a sinwave</p>
+                    </div>
+
+                    <div id = "vid" class = "videoWrapper">
+                        <iframe width="100%" height = "100%" src="https://www.youtube.com/embed/DSPLeWq3Qf4?si=mqwHtL15vky3hpiT" allowfullscreen></iframe>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+            </section>
+
+        </main>
+
+
+
+        <footer>
+            <div class = "centered" style = "margin-bottom: 8rem; padding-top: 5rem;">
+                <h2><a href = "../Contact.html">CONTACT ME</a></h2>
+                <hr style="margin: auto; width: 20rem;">
+            </div>
+
+        </footer>
+    </body>
+
+</html>

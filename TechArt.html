@@ -12,205 +12,102 @@
     </head>
 
     <body>
-
         <header class = "top-bar in-front">
-            <div>
-                <a href="index.html">
-                    <p class = "navtext leftbar">RETURN</p>
-                </a>
-            </div>
             <div>
                 <a href="Contact.html">
                     <p class = "navtext leftbar">CONTACT</p>
                 </a>
             </div>
-            <p class = "centered navtext">Dakota Thatcher</p>
-            <p class = "right navtext">Technical Artist</p>
+            <div></div>
+            <div class = "centered navtext">
+                <a  href="Index.html">
+                    <p >Dakota Thatcher</p>
+                </a>
+            </div>
+            <div class = "right">
+                <a  href="https://linktr.ee/greebly_" target = "_blank">
+                    <p class = "navtext">Linktree</p>
+                <img src="assets/Images/Logos/linktreeIcon.webp"  alt="Linktree Logo" >
+                </a>
+            </div>
         </header>
 
         <main>
-            <section>
-                <h2>Landscape Grass System</h2>
-                <div class = "sector-grid">
-                    <div id = "viewer" class = "viewer">
-                        <div>
-                            <div class = "view-top-flex">
-                                <img src="assets/Images/Logos/LogoUnreal.png" alt="Unreal Engine Logo" class = "small-icon">
-                                <img src="assets/Images/Logos/LogoKrita.png" alt="Krita Logo" class = "small-icon">
-                                <img src="assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
-                            </div>
-                            <img src = "assets/Images/Showcases/UE5_grass/watcharockgrow.png" alt = "stylized grass render" class = "full viewer-img">
-                            <div class = "view-bottom-flex">
-                                <div class = "asset-icon">
-                                    <img src="assets/Images/Showcases/UE5_grass/GrasssSplat.png" alt="Grass albedo texture" class = "full">
-                                    <p>Grass Color</p>
-                                </div>
-                                <div class = "asset-icon">
-                                    <img src="assets/Images/Showcases/UE5_grass/RockPathHeight.png" alt="Path height map texture" class = "full">
-                                    <p>Path Height</p>
-                                </div>
-                                <div class = "asset-icon">
-                                    <img src="assets/Images/Showcases/UE5_grass/RockNormal.png" alt="Path normal map texture" class = "full">
-                                    <p>Path Normal</p>
-                                </div>
-                            </div>
+            <div class = "title">
+                <h2>Technical Art</h2>
+                <hr style="margin: auto; width: 40%;">
+                <div class = "showcase">
+                    <div class = "showcaseItem">
+                        <div class = "showcaseItemArea">
+                            <p>2D Lava Shader</p>
+                            <img src = "assets/Images/Showcases/LavaShader/LavaShader.png" alt = "Lava shader">
                         </div>
-                       
+                        <a class = "overlayButton" href="ShowcasePages/LavaShader.html">
+                            <p>Read More</p>
+                        </a>
                     </div>
-                    <div id = "description" class = "description">
-                        <p>Built inside of Unreal Engine 5 <sub>(all assets made by me)</sub></p>
-                        <p>All 3 textures are sampled with <strong>top-down projection</strong></p>
-                        <p>Landscape uses UEs landscape material layers to <strong>height blend</strong> the path textures over the grass. Additionally the blending takes into account physics materials for linkage with other systems.</p>
-                        <p>Grass and foliage is automatically instanced</p>
-                        <p>The material that the foliage uses gradually adjusts hue and saturation according to a vertical gradient. All foliage also uses <strong>vertical split normals</strong> to mimic the same shading as the ground.
-                            <br/>
-                            <br/>
-                            The result is that the foliage blends into the ground below it. Your eyes cannot follow a single blade of grass to its root. Very fluffy and stylized.
-                            <br/>
-                            Level designers and environment artists can easily <strong>paint where the path should go.</strong> The system was packaged into a zip folder and given to some collegues. On the right is a game jam game <strong><u><a href = "https://lucasfoxworthy.framer.website/" target="_blank">Lucas Foxworthy</a></u></strong> made with my package.
-                        </p>
+                    <div class = "showcaseItemTall">
+                        <div class = "showcaseItemArea">
+                            <p>Character Creator WIP</p>
+                            <div class = "bawx">
+                                
+                            </div>
+                            <img src = "assets/Images/Showcases/CharCreator/CharCreator.gif" alt = "Gif of base character mesh shifting genders">
+                        </div>
+                        <div class = "overlayButton">
+                            <a class = "overlayButton" href="ShowcasePages/CharacterCreator.html">
+                                <p>Read More</p>
+                            </a>
+                        </div>
                     </div>
-                    <div id = "vid" class = "videoWrapper">
-                        <iframe width="100%" height = "100%" src="https://www.youtube.com/embed/lbRlqYilRkk?si=vRxH8JbvGtHTW_SR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    <div class = "showcaseItemWide">
+                        <div class = "showcaseItemArea">
+                            <p>Stylized Grass</p>
+                            <img src = "assets/Images/Showcases/UE5_grass/watcharockgrow.png">
+                        </div>
+                        <div class = "overlayButton">
+                            <a class = "overlayButton" href="ShowcasePages/LandscapeGrass.html">
+                                <p>Read More</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class = "showcaseItem">
+                        <div class = "showcaseItemArea">
+                            <p>Ice Shader</p>
+                            <img src = "assets/Images/Showcases/IceShader/IceShader.gif">
+                        </div>
+                        <div class = "overlayButton">
+                            <a class = "overlayButton" href="ShowcasePages/ParralaxIce.html">
+                                <p>Read More</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class = "showcaseItem">
+                        <div class = "showcaseItemArea">
+                            <p>Muzzle Flash</p>
+                            <img src = "assets/Images/Showcases/MuzzleFlash/MuzzleFlashDemo.png" alt = "Muzzle flash effect">
+                        </div>
+                        <div class = "overlayButton">
+                            <a class = "overlayButton" href="ShowcasePages/MuzzleFlash.html">
+                                <p>Read More</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class = "showcaseItemWide">
+                        <div class = "showcaseItemArea">
+                            <p>Warehouse Horror Game</p>
+                            <img src = "assets/Images/Showcases/Warehouse/Warehouse 1.png">
+                        </div>
+                        <div class = "overlayButton">
+                            <a class = "overlayButton" href="ShowcasePages/Warehouse.html">
+                                <p>Read More</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section>
-                <h2>Ice Shader</h2>
-                <div class = "sector-grid">
-                    <div id = "viewer" class = "viewer">
-                        <div>
-                            <div class = "view-top-flex">
-                                <img src="assets/Images/Logos/LogoUnreal.png" alt="Unreal Engine Logo" class = "small-icon">
-                            </div>
-                            <div class = "colageGrid">
-                                <img src = "assets/Images/Showcases/IceShader/IceShader.gif" alt = "Sphere of ice shader" class = "twothird viewer-img">
-                            </div>
-                            <div class = "view-bottom-flex">
-                                <div class = "asset-icon">
-                                    <img src="assets/Images/Showcases/IceShader/IceNormal.jpg" alt="Ice normal texture" class = "full">
-                                    <p>Ice Normal</p>
-                                </div>
-                                <div class = "asset-icon">
-                                    <img src="assets/Images/Showcases/IceShader/perlin_noise.png" alt="baked perlin noise" class = "full">
-                                    <p>Perlin Noise</p>
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div>
-                    <div id = "description" class = "description">
-                        <p>What started as an environment for a passion project pivoted towards refining an interesting shader setup.
-                        </p>
-                        <p>
-                            This ice shader mainly uses <strong>parallax mapping</strong> with a noise texture <sub>The noise is used for colorization</sub>
-                        </p>
-                        <p>What enables the true ice effect is that the <strong>parallax mapping uses non uniform depth</strong>, the depth is scaled by the noise texture.</p>
-                        <p>As a final layer of ice-ness, an icy <strong>normal map</strong> is used alongside some <strong>direct specular</strong></p>
-                    </div>
-            </section>
+            </div>
 
-            <div style = "height: 80px;"></div>
-
-            <section>
-                <h2>Lava Shader</h2>
-                <div class = "sector-grid">
-                    <div id = "viewer" class = "viewer">
-                        <div>
-                            <div class = "view-top-flex">
-                                <img src="assets/Images/Logos/LogoGodot.png" alt="Godot Logo" class = "small-icon">
-                                <img src="assets/Images/Logos/LogoKrita.png" alt="Krita Logo" class = "small-icon">
-                                <img src="assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
-                            </div>
-                            <div class = "colageGrid">
-                                <img src = "assets/Images/Showcases/LavaShader/LavaShader.png" alt = "Lava shader" class = "twothird viewer-img">
-                            </div>
-                            <div class = "view-bottom-flex">
-                                <div class = "asset-icon">
-                                    <img src="assets/Images/Showcases/LavaShader/LavaDistortion.png" alt="Lava heat distortion map" class = "full">
-                                    <p>Head distortion noise</p>
-                                    <p>(seamless)</p>
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div>
-                    <div id = "description" class = "description">
-                        <p>Made for Mini Jam #153: <strong><a href = "https://cranberryninja.itch.io/magnafisher" target="_blank"><u>Magnafisher</u></a></strong>. A game about magnet fishing in lava.
-                        </p>
-                        <p>Shader built in <strong>Godot using its GLSL</strong> for a sprite 2D shader. </p>
-                        <p>Uses an implementation of <strong>world space pixel position</strong> to <strong>project a heat distortion texture</strong> as well as calculate <strong>voronoi noise</strong></p>
-                        <p>2 Layers of voronoi are mixed using the luminance function and then passed to sample a <strong>gradient lookup texture</strong> for coloration</p>
-                        <p>All textures scroll in different directions and speeds</p>
-                        <p>2 scrolling sinwaves are mixed together to be used as a surface mask</p>
-                        <p>Lastly, the opacity pulsates according to a sinwave</p>
-                    </div>
-
-                    <div id = "vid" class = "videoWrapper">
-                        <iframe width="100%" height = "100%" src="https://www.youtube.com/embed/DSPLeWq3Qf4?si=mqwHtL15vky3hpiT" allowfullscreen></iframe>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-            </section>
-
-            <section>
-                <h2>Muzzle Flash</h2>
-                <div class = "sector-grid">
-                    <div id = "viewer" class = "viewer">
-                        <div>
-                            <div class = "view-top-flex">
-                                <img src="assets/Images/Logos/LogoUnity.png" alt="Unity Logo" class = "small-icon">
-                                <img src="assets/Images/Logos/LogoKrita.png" alt="Krita Logo" class = "small-icon">
-                                <img src="assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
-                            </div>
-                            <div class = "colageGrid">
-                                <img src = "assets/Images/Showcases/MuzzleFlash/MuzzleFlashDemo.png" alt = "Lava shader" class = "twothird viewer-img">
-                            </div>
-                            <div class = "view-bottom-flex">
-                                <div class = "asset-icon">
-                                    <img src="assets/Images/Showcases/MuzzleFlash/MuzzleFlash.png" alt="Flashsprite1" class = "full">
-                                </div>
-                                <div class = "asset-icon">
-                                    <img src="assets/Images/Showcases/MuzzleFlash/SoftMuzzleFlash.png" alt="Flashsprite2" class = "full">
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div>
-                    <div id = "description" class = "description">
-                        <p>Made for personal passion project</p>
-                        <p>All assets made by me</p>
-                        <p>The effect is built with the Unity VFX graph</p>
-                        <p>The outwards sparks use <strong>radial UVs</strong>, so we can randomize the amount of sparks by compressing the UV coordinates in the X with texture repeat enabled</p>
-                        <p>I also implemented basic <strong>procedural animations</strong> for the weapon aiming</p>
-                    </div>
-
-                    <div id = "vid" class = "videoWrapper">
-                        <iframe width="100%" src="https://www.youtube.com/embed/nVeaqccnPHo?si=Kh5VQ3FUa1mL4bPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-            </section>
-
-            <div style = "height: 20px;"></div>
-
-            <section>
-                <h2>Character Creator [WIP]</h2>
-                <div class = "sector-grid">
-                    <div id = "viewer" class = "viewer">
-                        <div>
-                            <div class = "view-top-flex">
-                                <img src="assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
-                            </div>
-                            <div class = "colageGrid">
-                                <img src = "assets/Images/Showcases/CharCreator/CharCreator.gif" alt = "Gif of base character mesh shifting genders" class = "twothird viewer-img">
-                            </div>
-                        </div>
-                       
-                    </div>
-                    <div id = "description" class = "description">
-                        <p>Made for the same passion project above</p>
-                        <p>The mesh uses <strong>shapekeys</strong> alongside <strong>bone offsets</strong> for customization</p>
-                        <p>The gender shapekey is created by <strong>retopologizing</strong> two seperate sculpts using the same mesh</p>
-                        <p>This results in a very powerful slider</p>
-                    </div>
-            </section>
         </main>
 
 

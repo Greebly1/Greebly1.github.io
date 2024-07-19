@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <title>Dakota Thatcher</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+                
+        <link rel = "Stylesheet" href = "../NewStyle.css">
+    </head>
+
+    <body>
+        <header class = "top-bar in-front">
+            <div>
+                <a href="../Contact.html">
+                    <p class = "navtext leftbar">CONTACT</p>
+                </a>
+            </div>
+            <div></div>
+            <div class = "centered navtext">
+                <a  href="../Index.html">
+                    <p >Dakota Thatcher</p>
+                </a>
+            </div>
+            <div class = "right">
+                <a  href="https://linktr.ee/greebly_" target = "_blank">
+                    <p class = "navtext">Linktree</p>
+                <img src = "../assets/Images/Logos/linktreeIcon.webp"  alt="Linktree Logo" >
+                </a>
+            </div>
+        </header>
+
+        <main>
+
+
+            <section>
+                <h2>Fool's Gold (WIP)</h2>
+                <div class = "sector-grid">
+                    <div id = "viewer" class = "viewer">
+                        <div>
+                            <div class = "view-top-flex">
+                                <img src = "../assets/Images/Logos/LogoUnity.png" alt="Unity Engine Logo" class = "small-icon">
+                                <img src = "../assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
+                            </div>
+                            <img src = "../assets/Images/Showcases/TopdownGame/thumbnail.png" alt = "Character holding gun" class = "full viewer-img">
+                        </div>
+                       
+                    </div>
+                    <div id = "description" class = "description">
+                        <p>This is an early WIP <strong>topdown/third person game</strong> I am making in <strong>Unity</strong></p>
+                        <p>I've had a lot of time to polish the gameplay systems</p>
+                        <p>First of all, all <strong>player input is seperated into state machines and decoupled completely</strong>, then a designer created <strong>event system specifies how they can communicate</strong>. For instance, the UI select event can tell the locomotion controller to attempt to possess a gameobject it selects</p>
+                        <p>Second, the camera controller can switch between dynamic top down, and third person at runtime</p>
+                        <p>All pawns use <strong>root motion</strong> to move and implement the <strong>interact interface</strong></p>
+                        <p>Lastly, the projectiles use basic <strong>object pooling</strong></p>
+                    </div>
+                    <div id = "vid" class = "videoWrapper">
+                        <iframe width="100%" src = "https://www.youtube.com/embed/XQjfzTZOsss?si=rf_aeNHmdnKJ31Sq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class = "centered" style = "margin-bottom: 8rem; padding-top: 5rem;">
+                <h2><a href = "../Contact.html">CONTACT ME</a></h2>
+                <hr style="margin: auto; width: 20rem;">
+            </div>
+
+        </footer>
+    </body>
+
+</html>

@@ -14,141 +14,77 @@
     <body>
         <header class = "top-bar in-front">
             <div>
-                <a href="index.html">
-                    <p class = "navtext leftbar">RETURN</p>
-                </a>
-            </div>
-            <div>
                 <a href="Contact.html">
                     <p class = "navtext leftbar">CONTACT</p>
                 </a>
             </div>
-            <p class = "centered navtext">Dakota Thatcher</p>
-            <p class = "right navtext">Environment Artist</p>
+            <div></div>
+            <div class = "centered navtext">
+                <a  href="Index.html">
+                    <p >Dakota Thatcher</p>
+                </a>
+            </div>
+            <div class = "right">
+                <a  href="https://linktr.ee/greebly_" target = "_blank">
+                    <p class = "navtext">Linktree</p>
+                <img src="assets/Images/Logos/linktreeIcon.webp"  alt="Linktree Logo" >
+                </a>
+            </div>
         </header>
 
         <main>
-            <section>
-                <h2>Landscape Grass System</h2>
-                <div class = "sector-grid">
-                    <div id = "viewer" class = "viewer">
-                        <div>
-                            <div class = "view-top-flex">
-                                <img src="assets/Images/Logos/LogoUnreal.png" alt="Unreal Engine Logo" class = "small-icon">
-                                <img src="assets/Images/Logos/LogoKrita.png" alt="Krita Logo" class = "small-icon">
-                                <img src="assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
-                            </div>
-                            <img src = "assets/Images/Showcases/UE5_grass/watcharockgrow.png" alt = "stylized grass render" class = "full viewer-img">
-                            <div class = "view-bottom-flex">
-                                <div class = "asset-icon">
-                                    <img src="assets/Images/Showcases/UE5_grass/GrasssSplat.png" alt="Grass albedo texture" class = "full">
-                                    <p>Grass Color</p>
-                                </div>
-                                <div class = "asset-icon">
-                                    <img src="assets/Images/Showcases/UE5_grass/RockPathHeight.png" alt="Path height map texture" class = "full">
-                                    <p>Path Height</p>
-                                </div>
-                                <div class = "asset-icon">
-                                    <img src="assets/Images/Showcases/UE5_grass/RockNormal.png" alt="Path normal map texture" class = "full">
-                                    <p>Path Normal</p>
-                                </div>
-                            </div>
+            <div class = "title">
+                <h2>Environment Art</h2>
+                <hr style="margin: auto; width: 40%;">
+                <div class = "showcase">
+
+                    <div class = "showcaseItemWide">
+                        <div class = "showcaseItemArea">
+                            <p>Stylized Grass</p>
+                            <img src = "assets/Images/Showcases/UE5_grass/watcharockgrow.png">
                         </div>
-                       
+                        <div class = "overlayButton">
+                            <a class = "overlayButton" href="ShowcasePages/LandscapeGrass.html">
+                                <p>Read More</p>
+                            </a>
+                        </div>
                     </div>
-                    <div id = "description" class = "description">
-                        <p>Built inside of Unreal Engine 5 <sub>(all assets made by me)</sub></p>
-                        <p>All 3 textures are sampled with <strong>top-down projection</strong></p>
-                        <p>Landscape uses UEs landscape material layers to <strong>height blend</strong> the path textures over the grass. Additionally the blending takes into account physics materials for linkage with other systems.</p>
-                        <p>Grass and foliage is automatically instanced</p>
-                        <p>The material that the foliage uses gradually adjusts hue and saturation according to a vertical gradient. All foliage also uses <strong>vertical split normals</strong> to mimic the same shading as the ground.
-                            <br/>
-                            <br/>
-                            The result is that the foliage blends into the ground below it. Your eyes cannot follow a single blade of grass to its root. Very fluffy and stylized.
-                            <br/>
-                            Level designers and environment artists can easily <strong>paint where the path should go.</strong> The system was packaged into a zip folder and given to some collegues. On the right is a game jam game <strong><u><a href = "https://lucasfoxworthy.framer.website/">Lucas Foxworthy</a></u></strong> made with my package.
-                        </p>
+                    <div class = "showcaseItemWide">
+                        <div class = "showcaseItemArea">
+                            <p>Industrial Interior</p>
+                            <img src = "assets/Images/Showcases/Environments/industrialdemo.png" alt = "industrial solid modelling interior">
+                        </div>
+                        <div class = "overlayButton">
+                            <a class = "overlayButton" href="ShowcasePages/IndustrialInterior.html">
+                                <p>Read More</p>
+                            </a>
+                        </div>
                     </div>
-                    <div id = "vid" class = "videoWrapper">
-                        <iframe width="100%" height = "100%" src="https://www.youtube.com/embed/lbRlqYilRkk?si=vRxH8JbvGtHTW_SR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class = "showcaseItemWide">
+                        <div class = "showcaseItemArea">
+                            <p>Fantasy City</p>
+                            <img src = "assets/Images/Showcases/Environments/goldenagedemo.png" alt = "fantasy city solid modelling environment">
+                        </div>
+                        <div class = "overlayButton">
+                            <a class = "overlayButton" href="ShowcasePages/ExteriorEnvironment.html">
+                                <p>Read More</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class = "showcaseItemWide">
+                        <div class = "showcaseItemArea">
+                            <p>Warehouse Horror Game</p>
+                            <img src = "assets/Images/Showcases/Warehouse/Warehouse 1.png">
+                        </div>
+                        <div class = "overlayButton">
+                            <a class = "overlayButton" href="ShowcasePages/Warehouse.html">
+                                <p>Read More</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </section>
-
-            <section>
-                <h2>Warehouse</h2>
-                <div class = "sector-grid">
-                    <div id = "viewer" class = "viewer">
-                        <div>
-                            <div class = "view-top-flex">
-                                <img src="assets/Images/Logos/LogoUnity.png" alt="Unity Engine Logo" class = "small-icon">
-                                <img src="assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
-                                <img src="assets/Images/Logos/LogoKrita.png" alt="Krita Logo" class = "small-icon">
-                            </div>
-                            <img src = "assets/Images/Showcases/Warehouse/Warehouse 1.png" alt = "A spooky warehouse" class = "full viewer-img">
-                        </div>
-                       
-                    </div>
-                    <div id = "description" class = "description">
-                        <p>This is a warehouse horror game <strong>made in a week with unity</strong></p>
-                        <p>All assets <sub>(except audio)</sub> were made by me</p>
-                        <p>The textures are all very low resolution, almost pixel art textures</p>
-                        <p>Using PBR shading with roughness and metallic textures brings out so much in the assets</p>
-
-                    </div>
-                    <div id = "vid" class = "videoWrapper">
-                        <iframe width="100%" src="https://www.youtube.com/embed/gvA1gtSGJgs?si=YFfuIkj3gUfweC07" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </section>
+            </div>
             
-            <section>
-                <h2>Industrial Interior</h2>
-                <div class = "sector-grid">
-                    <div id = "viewer" class = "viewer">
-                        <div>
-                            <div class = "view-top-flex">
-                                <img src="assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
-                            </div>
-                            <img src = "assets/Images/Showcases/Environments/industrialdemo.png" alt = "A sci-fi interior" class = "full viewer-img">
-                        </div>
-                       
-                    </div>
-                    <div id = "description" class = "description">
-                        <p>This was made for the final of an environment art class</p>
-                        <p>Most of the assets are not UV unwrapped or textured</p>
-                        <p>Interior uses modular tileset</p>
-
-                    </div>
-                    <div id = "vid" class = "videoWrapper">
-                        <iframe width="100%" src="https://www.youtube.com/embed/GR4jZKdGXtU?si=JP5GBhTvu0hS96De" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                    </div>
-                </div>
-            </section>
-
-            <section>
-                <h2>Exterior Environment</h2>
-                <div class = "sector-grid">
-                    <div id = "viewer" class = "viewer">
-                        <div>
-                            <div class = "view-top-flex">
-                                <img src="assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
-                            </div>
-                            <img src = "assets/Images/Showcases/Environments/goldenagedemo.png" alt = "Untextured 3D mock up of an exterior of a city" class = "full viewer-img">
-                        </div>
-                       
-                    </div>
-                    <div id = "description" class = "description">
-                        <p>This was made for an environment art class</p>
-                        <p>Most of the assets are not UV unwrapped or textured</p>
-                        <p>Buildings are made with a modular tileset I created</p>
-                        
-
-                    </div>
-                    <div id = "vid" class = "videoWrapper">
-                        <iframe width="100%" src="https://www.youtube.com/embed/HcFwZKWYmaQ?si=2LkRJ0IT_642obRu&amp;start=180" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                 
-                    </div>
-                </div>
-            </section>
         </main>
 
         <footer>
