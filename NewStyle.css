@@ -264,8 +264,7 @@ footer {
     margin-top: 5rem;
     padding-top: 3rem;
     width: 100%;
-    background-color: var(--Offwhite);
-    height: 100%;
+    background-color: var(--Primary);
 }
 
 footer h2 {
@@ -286,7 +285,7 @@ footer img {
 }
 
 footer p {
-    color: var(--Primary);
+    color: var(--Offwhite);
     font-family: "Odor Mean Chey";
     font-weight: 100;
     font-size: var(--fontsize);
@@ -675,7 +674,9 @@ strong {
 }
 
 .med {
-    width: 65%
+    width: 75%;
+    margin: auto;
+    
 }
 
 /*Front page styling*/
@@ -787,3 +788,54 @@ strong {
     
 }
 
+
+.objectiveSection {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: min-content;
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 2rem;
+
+    grid-template-areas: 
+        "description imag"
+        "gallery gallery"
+    ;
+    
+}
+
+.objectiveDescription {
+    grid-area: description;
+    margin: auto;
+}
+
+.objectiveDescription h2 {
+    margin-left: 10%;
+    font-family: "Odor Mean Chey";
+    font-weight: 100;
+    font-size: var(--titlesize);
+    margin-bottom: 0.5rem;
+}
+
+.objectiveIcon {
+    grid-area: imag;
+    align-items: center;
+}
+
+.objectiveGallery {
+    grid-area: gallery;
+    margin-left: 5%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-auto-rows: min-content;
+    row-gap: 1rem;
+    
+    font-size: 1.5em;
+    color: var(--Secondary);
+    font-weight: 1;
+    font-family: "Odor Mean Chey";
+}
