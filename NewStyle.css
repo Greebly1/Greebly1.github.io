@@ -861,3 +861,8 @@ strong {
     background-color: var(--Tertiary);
     margin-right: 5%;
 }
+
+.twoRow a {
+    color: var(--Secondary);
+    text-decoration: underline;
+}
