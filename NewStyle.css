@@ -839,3 +839,25 @@ strong {
     font-weight: 1;
     font-family: "Odor Mean Chey";
 }
+
+.twoRow {
+    height: 92%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+}
+
+.twoRow img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 90%;
+}
+
+.twoRow p {
+    color: var(--Primary);
+    background-color: var(--Tertiary);
+    margin-right: 5%;
+}
