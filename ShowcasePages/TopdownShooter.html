@@ -33,10 +33,69 @@
         </header>
 
         <main>
-
+            <div class = "title">
+                <h2>Top-Down Shooter | Fool's Gold</h2>
+                <hr style="margin: auto; width: 40%;">
+            </div>
+            <div style="height: 120px;"></div>
 
             <section>
-                <h2>Fool's Gold (WIP)</h2>
+                <h2>General Info</h2>
+                <div class = "sector-grid">
+                    <div id = "viewer" class = "viewer">
+                        <div>
+                            <div class = "view-top-flex">
+                                <img src = "../assets/Images/Logos/LogoUnity.png" alt="Unity Engine Logo" class = "small-icon">
+                                <img src = "../assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
+                                <img src="../assets/Images/Logos/LogoKrita.png" alt="Krita Logo" class = "small-icon">
+
+                            </div>
+                            <img src = "../assets/Images/Showcases/TopdownGame/thumbnail.png" alt = "Character holding gun" class = "full viewer-img">
+                        </div>
+                       
+                    </div>
+                    <div id = "description" class = "description">
+                        <p>This game was made with <strong>Unity C#</strong></p>
+                        <p>I used this project to experiment with <strong>decoupling game systems extensively</strong> (I probably went too far).</p>
+                        <p>The camera system is exceedingly robust, the player has extremely fine-tune control over it.</p>
+                        <p>Multiple element types to spice things up (implemented with <strong>bit-masking</strong>)</p>
+                    </div>
+                    <div id = "vid" class = "videoWrapper">
+                        <iframe width="100%" src = "https://www.youtube.com/embed/XQjfzTZOsss?si=rf_aeNHmdnKJ31Sq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Input</h2>
+                <div class = "sector-grid">
+                    <div id = "viewer" class = "viewer">
+                        <div>
+                            <div class = "view-top-flex">
+                                <img src = "../assets/Images/Logos/LogoUnity.png" alt="Unity Engine Logo" class = "small-icon">
+                            </div>
+                            <img src = "../assets/Images/Showcases/TopdownGame/thumbnail.png" alt = "Character holding gun" class = "full viewer-img">
+                        </div>
+                       
+                    </div>
+                    <div id = "description" class = "description">
+                        <p>All player input is seperated into self-contained state machines. For example:</p>
+                        <p>-User Interface Input</p>
+                        <p>-Action/Ability Input</p>
+                        <p>-Camera Input</p>
+                        <p> <strong>Systems communicate using events</strong> in a decoupled manner. For instance, the UI select event signals the camera controller to attempt to focus on a gameobject</p>
+                        <p>So <strong>multiple programmers can work on user input systems at a time</strong> without needing to know implementation details of other systems.</p>
+                        <p>Also, <strong>designers can easily hook up input events to behaviors in game.</strong></p>
+                        
+                    </div>
+                    <div id = "vid" class = "videoWrapper">
+                        <iframe width="100%" src = "https://www.youtube.com/embed/XQjfzTZOsss?si=rf_aeNHmdnKJ31Sq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Locomotion</h2>
                 <div class = "sector-grid">
                     <div id = "viewer" class = "viewer">
                         <div>
@@ -49,17 +108,51 @@
                        
                     </div>
                     <div id = "description" class = "description">
-                        <p>This is an early WIP <strong>topdown/third person game</strong> I am making in <strong>Unity</strong></p>
-                        <p>I've had a lot of time to polish the gameplay systems</p>
-                        <p>First of all, all <strong>player input is seperated into state machines and decoupled completely</strong>, then a designer created <strong>event system specifies how they can communicate</strong>. For instance, the UI select event can tell the locomotion controller to attempt to possess a gameobject it selects</p>
-                        <p>Second, the camera controller can switch between dynamic top down, and third person at runtime</p>
-                        <p>All pawns use <strong>root motion</strong> to move and implement the <strong>interact interface</strong></p>
-                        <p>Lastly, the projectiles use basic <strong>object pooling</strong></p>
+                        <p>All pawns use <strong>root motion</strong> taken from Mixamo animations</p>
+                        <p>Pawns leverage <strong>inheritance</strong> to extend the front-end of the default pawn. </p>
+                        <p>For instance, a pawn supports movement commands, and a humanoid pawn additionally supports crouch commands</p>
+                        <p>For aiming, item holding, and crouching I utilized Unity's <strong>procedural animation tools for inverse kinematics and animation layers.</strong></p>
                     </div>
                     <div id = "vid" class = "videoWrapper">
                         <iframe width="100%" src = "https://www.youtube.com/embed/XQjfzTZOsss?si=rf_aeNHmdnKJ31Sq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
+            </section>
+
+            <section>
+                <h2>Muzzle Flash</h2>
+                <div class = "sector-grid">
+                    <div id = "viewer" class = "viewer">
+                        <div>
+                            <div class = "view-top-flex">
+                                <img src="../assets/Images/Logos/LogoUnity.png" alt="Unity Logo" class = "small-icon">
+                                <img src="../assets/Images/Logos/LogoKrita.png" alt="Krita Logo" class = "small-icon">
+                                <img src="../assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
+                            </div>
+                            <div class = "colageGrid">
+                                <img src = "../assets/Images/Showcases/MuzzleFlash/MuzzleFlashDemo.png" alt = "Lava shader" class = "twothird viewer-img">
+                            </div>
+                            <div class = "view-bottom-flex">
+                                <div class = "asset-icon">
+                                    <img src="../assets/Images/Showcases/MuzzleFlash/MuzzleFlash.png" alt="Flashsprite1" class = "full">
+                                </div>
+                                <div class = "asset-icon">
+                                    <img src="../assets/Images/Showcases/MuzzleFlash/SoftMuzzleFlash.png" alt="Flashsprite2" class = "full">
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div id = "description" class = "description">
+                        <p>The effect is built with the Unity VFX graph</p>
+                        <p>The outwards sparks use <strong>radial UVs</strong>, so we can randomize the amount of sparks by compressing the UV coordinates in the X with texture repeat enabled</p>
+                        <p>The weapon, and FX textures were made by me</p>
+                        <p>I also implemented basic <strong>procedural animations</strong> for the weapon aiming</p>
+                    </div>
+
+                    <div id = "vid" class = "videoWrapper">
+                        <iframe width="100%" src="https://www.youtube.com/embed/nVeaqccnPHo?si=Kh5VQ3FUa1mL4bPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
             </section>
         </main>
 
