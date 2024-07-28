@@ -33,9 +33,40 @@
         </header>
 
         <main>
-            
-            <section>
+            <div class = "title">
                 <h2>Warehouse</h2>
+                <hr style="margin: auto; width: 40%;">
+            </div>
+            <div style="height: 120px;"></div>
+            <section>
+                <h2>General Info</h2>
+                <div class = "sector-grid">
+                    <div id = "viewer" class = "viewer">
+                        <div>
+                            <div class = "view-top-flex">
+                                <img src = "../assets/Images/Logos/LogoUnreal.png" alt="Unreal Engine Logo" class = "small-icon">
+                                <img src = "../assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
+                                <img src = "../assets/Images/Logos/LogoKrita.png" alt="Krita Logo" class = "small-icon">
+                            </div>
+                            <img src = "../assets/Images/Showcases/Warehouse/Warehouse 1.webp" alt = "A spooky warehouse" class = "full viewer-img">
+                        </div>
+                       
+                    </div>
+                    <div id = "description" class = "description">
+                        <p><strong>First-person horror game</strong> set in a warehouse at night made with Unreal Engine 5.</p>
+                        <p>The player is tasked with locating crates and bringing them to depot locations.</p> 
+                        <p>The warehouse uses <strong>motion-activated lights</strong> during nightshift.</p>
+                        <p>If the player hears a heartbeat in the darkness, turning the light on will end in a loss.</p>
+                        <p>If the player lingers in the darkness for too long, they lose.</p>
+                    </div>
+                    <div id = "vid" class = "videoWrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gmHC2GQDEKI?si=kF3204w8Ixe3kGn-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Unity Port</h2>
                 <div class = "sector-grid">
                     <div id = "viewer" class = "viewer">
                         <div>
@@ -44,27 +75,51 @@
                                 <img src = "../assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
                                 <img src = "../assets/Images/Logos/LogoKrita.png" alt="Krita Logo" class = "small-icon">
                             </div>
-                            <img src = "../assets/Images/Showcases/Warehouse/Warehouse 1.png" alt = "A spooky warehouse" class = "full viewer-img">
+                            <img src = "../assets/Images/Showcases/Warehouse/unitywarehouse2.webp" alt = "A spooky warehouse" class = "full viewer-img">
                         </div>
                        
                     </div>
                     <div id = "description" class = "description">
-                        <p>This is a warehouse horror game <strong>made in a week with unity</strong></p>
-                        <p>All assets <sub>(except audio)</sub> were made by me</p>
-                        <p>The textures are all very low resolution, almost pixel art textures</p>
-                        <p>Using PBR shading with roughness and metallic textures brings out so much in the assets</p>
-                        <p>The game absolutely abuses hard-coded <strong>event systems</strong> which made it so much easier to make the game in such a short time</p>
-                        <p>The entire level additionally exists on a <strong>5x5 grid of tiles</strong> stored as a <strong>singleton</strong> in memory</p>
-                        <p>Tiles individually contain motion activated lights</p>
-                        
-
+                        <p>This game was also made using Unity C# in a week.</p>
+                        <p>The unity port is identical, except for UI and lighting.</p>
+                        <p>Made for practice learning Unity</p>
                     </div>
                     <div id = "vid" class = "videoWrapper">
-                        <iframe width="100%" src = "https://www.youtube.com/embed/gvA1gtSGJgs?si=YFfuIkj3gUfweC07" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4m3uDBpJeb8?si=cTpAjFAVK_QKzXqH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
                 </div>
             </section>
 
+            <section>
+                <h2>Environment Art</h2>
+                <div class = "sector-grid">
+                    <div id = "viewer" class = "viewer">
+                        <div>
+                            <div class = "view-top-flex">
+                                <img src = "../assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
+                                <img src = "../assets/Images/Logos/LogoKrita.png" alt="Krita Logo" class = "small-icon">
+                            </div>
+                            <div class = "grid2 full">
+                                <img src = "../assets/Images/Showcases/Warehouse/pole.webp" alt = "wallmart pole" class = "full">
+                                <img src = "../assets/Images/Showcases/Warehouse/boxes.webp" alt = "stacked boxes" class = "full">
+                                <img src = "../assets/Images/Showcases/Warehouse/pallete.webp" alt = "wood pallet" class = "full">
+                                <img src = "../assets/Images/Showcases/Warehouse/shelf.webp" alt = "metal shelf" class = "full">
+
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div id = "description" class = "description">
+                        <p>All visual assets of this game were made from scratch.</p>
+                        <p><strong>Materials use PBR shading</strong> to tie it into the lighting.</p>
+                        <p><strong>Textures are low-resolution</strong>, sampled using 'nearest' filtering method to preserve pixel sharpness.</p>
+                        <p>Combined multiple light types to compose aesthetic lighting.</p>
+                        <p>Lastly, a starry night skybox can be seen through windows on the ceiling.</p>
+                    </div>
+                    <div id = "vid" class = "videoWrapper">
+                        <img src = "../assets/Images/Showcases/Warehouse/Warehousetop2.webp" alt = "A spooky warehouse" class = "full viewer-img">
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer>
