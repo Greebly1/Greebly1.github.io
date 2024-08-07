@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <title>Dakota Thatcher</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+                
+        <link rel = "Stylesheet" href = "../NewStyle.css">
+    </head>
+
+    <body>
+        <header class = "top-bar in-front">
+            <div>
+                <a href="../Contact.html">
+                    <p class = "navtext leftbar">CONTACT</p>
+                </a>
+            </div>
+            <div></div>
+            <div class = "centered navtext">
+                <a  href="https://greebly1.github.io">
+                    <p >Dakota Thatcher</p>
+                </a>
+            </div>
+            <div class = "right">
+                <a  href="https://linktr.ee/greebly_" target = "_blank">
+                    <p class = "navtext">Linktree</p>
+                <img src = "../assets/Images/Logos/linktreeIcon.webp"  alt="Linktree Logo" >
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <div class = "title">
+                <h2>Icarus Ignition</h2>
+                <hr style="margin: auto; width: 40%;">
+            </div>
+            <div style="height: 120px;"></div>
+            <section>
+                <h2>General Info</h2>
+                <div class = "sector-grid">
+                    <div id = "viewer" class = "viewer">
+                        <div>
+                            <div class = "view-top-flex">
+                                <img src = "../assets/Images/Logos/LogoUnity.png" alt="Unity Engine Logo" class = "small-icon">
+                            </div>
+                            <img src = "../assets/Images/Showcases/Icarus/Thumbnail.webp" alt = "Icarus Ignition logo" class = "full viewer-img">
+                        </div>
+                       
+                    </div>
+                    <div id = "description" class = "description">
+                        <p>Rocket jumping prototype game made in Unity.</p>
+                        <p>Utilizes <a href="https://github.com/AwesomeX/Fragsurf-Character-Controller/">AwesomeX's Fragsurf Source Physics</a> for air strafing and sliding.</p>
+                        <p>Game is intended to be played fast, to get the best times on the levels. A ranking system is displayed at the end of the level, and it is configured for the level using a scriptable object</p>
+                    </div>
+                    <div id = "vid" class = "videoWrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/80CVhXH1KpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Data-Driven Level Select</h2>
+                <div class = "sector-grid">
+                    <div id = "viewer" class = "viewer">
+                        <div>
+                            <div class = "view-top-flex">
+                                <img src = "../assets/Images/Logos/LogoUnity.png" alt="Unity Engine Logo" class = "small-icon">
+                            </div>
+                            <img src = "../assets/Images/Showcases/Icarus/LevelSelect.webp" alt = "Level select screen" class = "full viewer-img">
+                        </div>
+                       
+                    </div>
+                    <div id = "description" class = "description">
+                        <p>The game needed to be able to support a dynamic collection of levels.</p>
+                        <p>Designers can register their levels with the level select menu, giving them names, thumbnails, and difficulties</p>
+                        <p>Then the level select menu generates a clickable level select button for each registered level.</p>
+                    </div>
+                    <div>
+                        <img src = "../assets/Images/Showcases/Icarus/LevelData.webp" alt = "Level data" class = "full viewer-img">
+
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Score Ranking System</h2>
+                <div class = "sector-grid">
+                    <div id = "viewer" class = "viewer">
+                        <div>
+                            <div class = "view-top-flex">
+                                <img src = "../assets/Images/Logos/LogoUnity.png" alt="Unity Engine Logo" class = "small-icon">
+                            </div>
+                            <img src = "../assets/Images/Showcases/Icarus/Ranking.webp" alt = "End of level ranking" class = "full viewer-img">
+                        </div>
+                       
+                    </div>
+                    <div id = "description" class = "description">
+                        <p>Part of the level creation toolkit I made for myself</p>
+                        <p>The level manager is a singleton that represents the gamemode's rules</p>
+                        <p>It also contains data entry fields for setting and tweaking score rankings at the end of the level</p>
+                    </div>
+                    <div>
+                        <img src = "../assets/Images/Showcases/Icarus/LevelManager.webp" alt = "Level manager outliner" class = "full viewer-img">
+
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Time Rewind</h2>
+                <div class = "sector-grid">
+                    <div id = "viewer" class = "viewer">
+                        <div>
+                            <div class = "view-top-flex">
+                                <img src = "../assets/Images/Logos/LogoUnity.png" alt="Unity Engine Logo" class = "small-icon">
+                            </div>
+                            <img src = "../assets/Images/Showcases/Icarus/CircularBuffer.webp" alt = "circular array buffer diagram" class = "full viewer-img">
+
+                        </div>
+                       
+                    </div>
+                    <div id = "description" class = "description">
+                        <p>The player can rewind time</p>
+                        <p>Uses a <strong>custom circular array buffer</strong> to store time data (an interface)</p>
+                        <p>Time data objects internally manages storing and applying data.</p>
+                        <p>The circular array buffer manages the entire collection of time data, it <strong>stores lists of time data for each frame, and applies them when moving backward through time</strong>.</p>
+                        <p>Objects that need to track their variables over time, <strong>register themselves with the system using the factory pattern</strong>.</p>
+                    </div>
+                    <div id = "vid" class = "videoWrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/P-yM7hjz8vI?si=aATHwgC5BioZNqzr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+            </section>
+            
+            <section>
+                <h2>Toon Explosion</h2>
+                <div class = "sector-grid">
+                    <div id = "viewer" class = "viewer">
+                        <div>
+                            <div class = "view-top-flex">
+                                <img src = "../assets/Images/Logos/LogoUnity.png" alt="Unity Engine Logo" class = "small-icon">
+                                <img src = "../assets/Images/Logos/LogoBlender.png" alt="Blender Logo" class = "small-icon">
+
+                            </div>
+                            <div class = "grid2 full">
+                            </div>
+
+                        </div>
+                       
+                    </div>
+                    <div id = "description" class = "description">
+                        <p>A rocket jumping game is incomplete without explosions.</p>
+                        <p>This is a low-scope explosion using the Unity VFX Graph.</p>
+                        <p>Using a cloudlike mesh made with meta-balls.</p>
+                        <p>All that happens aside fromthe spherical velocity is a <strong>color shift and a voronoi dissolve.</strong></p>
+                        
+                    </div>
+                    <div id = "vid" class = "videoWrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dON9I7nPFM8?si=WfTMZwaUKuAv859e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class = "centered" style = "margin-bottom: 8rem; padding-top: 5rem;">
+                <h2><a href = "../Contact.html">CONTACT ME</a></h2>
+                <hr style="margin: auto; width: 20rem;">
+            </div>
+
+        </footer>
+    </body>
+
+</html>
