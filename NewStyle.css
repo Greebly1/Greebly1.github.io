@@ -866,3 +866,7 @@ strong {
     color: var(--Secondary);
     text-decoration: underline;
 }
+
+.ninetyper {
+    width: 90%;
+}
